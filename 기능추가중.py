@@ -1,4 +1,7 @@
 import discord
+import os
+
+
 from discord.ext import commands
 import random
 import requests
@@ -103,4 +106,5 @@ async def 도움(ctx):
     await ctx.send(embed=embed)
 
 # 봇 토큰으로 봇 로그인
-bot.run("MTEwOTExNjczNjIzNTYzNDgwOA.Gzpd8b.piKg5lLWCJJ8uedibvdMAkjR9P-YsCjQZtTTpo")
+access_token=os.environ["BOT_TOKEN"]
+bot.run("access_token")
